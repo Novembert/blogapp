@@ -4,13 +4,30 @@
     <title>Blogger</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext"%>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <p class="flash"><%=flash.notice%></p>
+    <header>
+      <h1>Articles Blog</h1>
+    </header>
+    <section id="wrap">
+    <nav>
+      <ul>
+        <li>All Articles</li>
+        <li>Serach by tags</li>
+        <li>Create a new article</li>
+      </ul>
+    </nav>
+    <main>
     <%= yield %>
+    </main>
+    </section>
+    <footer>
+      <p>Norbert Bujny 2019</p>
+    </footer>
   </body>
 </html>
