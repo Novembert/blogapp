@@ -24,7 +24,7 @@
 html {
     font-size: 10px;
     font-family: sans-serif;
-    color: #2A363B
+    color: #3F464C
 }
 
 body {
@@ -35,22 +35,74 @@ body {
 
 header {
     flex: 0 0 auto;
+    background-color: #FF7F66;
+    box-shadow: 0px 1px 5px 0px rgba(63,70,76,0.5);
+    z-index: 99;
 }
 
-section#wrap {
+nav {
+    flex: 0 0 auto;
+    background-color: #7ECEFC;
+    box-shadow: 0px 1px 5px 0px rgba(63,70,76,0.5);
+    z-index: 98;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    flex: 0 1 250px;
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: #3F464C;
+    transition: .2s;
+    box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,0);
+}
+
+nav ul li a:hover {
+    background-color: #2186C4;
+    color: #FFF6E5;
+    box-shadow: inset 0px 1px 5px 0px rgba(63,70,76,0.5);
+}
+
+main {
     flex: 1 0 auto;
+    padding: 20px 30px;
+    background-color: #FFF6E5;
 }
 
 footer {
     flex: 0 0 auto;
+    padding: 5px 2px;
+    background-color: #FF7F66;
+    box-shadow: 0px 1px 5px 0px rgba(63,70,76,0.5);
+    z-index: 99;
 }
 
 h1 {
     padding: 15px 10px;
-    background-color: #FECEA8;
 
+    color: #FFF6E5;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 3.6rem;
     font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 2px 0px 2px rgba(63, 70, 76, 0.5);
 }
 
+h2 {
+    font-size: 2.4rem;
+    text-align: center;
+}

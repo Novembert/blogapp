@@ -14,18 +14,16 @@
     <header>
       <h1>Articles Blog</h1>
     </header>
-    <section id="wrap">
     <nav>
       <ul>
-        <li>All Articles</li>
-        <li>Serach by tags</li>
-        <li>Create a new article</li>
+        <li><%= link_to 'All articles', articles_path%></li>
+        <li><%= link_to 'Search by tags', tags_path%></li>
+        <li><%= link_to 'Create a new article', new_article_path%></li>
       </ul>
     </nav>
     <main>
     <%= yield %>
     </main>
-    </section>
     <footer>
       <p>Norbert Bujny 2019</p>
     </footer>
