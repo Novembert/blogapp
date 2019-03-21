@@ -1,7 +1,17 @@
 <h2>Articles Tagged with <%=@tag.name%></h2>
 
-<ul>
-<% @tag.articles.each do |article|%>
-    <li><%= link_to article.title, article_path(article)%></li>
-<%end%>
+<ul id="articles">
+    <% @tag.articles.each do |article|%>
+        <li>
+            <h3><%= link_to article.title, article_path(article)%></h3>
+            <p><%= article.body[0,50] + '...' %></p>
+            <p class="tags"> Tags: 
+            <% article.tags.each do |tag|%>
+                <%=link_to tag.name, tag_path(tag)%>, 
+
+            <%end%>
+            </p>
+            <hr>
+        </li>    
+    <% end %>
 </ul>
