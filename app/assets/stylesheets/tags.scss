@@ -6,16 +6,3 @@ ul#tags a:first-of-type {
     text-transform: capitalize
 }
 
-ul#tags a:last-of-type {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 2px 5px;
-    color: #FF7F66;
-    border: 1px solid #FF7F66;
-}
-
-ul#tags a:last-of-type:hover {
-    color: #ff451f;
-    border-color: #ff451f;
-    background-color: #ffe4df;
-}

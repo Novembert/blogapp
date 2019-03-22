@@ -2,6 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+p {
+    font-size: 1.8rem;
+    display: flex;
+}
+ 
+p.tags {
+    font-size: 1.5rem;
+    
+}
+
+p.tags a {
+    font-size: 1.5rem;
+}
+
+article p{
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+article>a{
+    margin-top: 20px;
+}
+
 form.new_article p {
     display: flex;
     flex-direction: column;
@@ -15,3 +38,6 @@ form.new_article input[type=submit] {
     width: 50%;
     min-width: 250px;
 }
+
+
+
